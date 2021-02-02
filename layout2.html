@@ -1,0 +1,219 @@
+
+
+<html>
+<head>
+     <title>Exemplo de CSS Layout</title>
+<style>
+body{
+ font: 100% Verdana, sans-serif;
+}
+    
+#container{
+ margin: 10px auto;
+ width: 1000px;
+ border: 1px solid gray;
+}
+
+#header {
+ height: 100px;
+ width: 100%;
+ background: black;
+}
+#header h1 {
+ font: 200% Verdana, sans-serif;
+ color: green;
+ position:relative;
+ bottom:20px;
+ display:inline;
+}
+#header img {
+ height: 100px;
+ z-index:-1;
+}
+
+#mainnav{
+ padding: 6;
+ margin: 1;
+ font: 100% Verdana, sans-serif;
+ background: #8074CB;
+ border-top: 2px solid #4D4197; 
+ border-bottom: 2px solid #4D4197;
+}
+
+#mainnav li {
+ list-style: none;
+ margin: 1px 6px 1px 6px;
+ padding: 5px 3px 5px 3px;
+ display: inline;
+}
+#mainnav li a {
+ margin:1;
+ padding:1;
+ text-decoration:none;
+ color: #fff;
+}
+#mainnav li a:visited {
+ color: #fff;
+}
+#mainnav li a:hover {
+ background: #fff;
+ color: #000;
+}
+#mainnav li a:active {
+ background: #ccc;
+ color: #000;
+}
+
+#menu {
+ float: right;
+ width: 180px;
+ border-left: 1px solid green;
+ margin-top:20px;
+}
+
+#menu ul {
+ margin: 1em 0;
+ padding: 6px;
+}
+
+#menu ul li {
+ margin: 0 0 1em;
+ padding: 0;
+ list-style-type: none;
+}
+
+#contents {
+ float:left;
+ width:700px;
+ background:white;
+ padding:10px;
+}
+
+#contents h1, h2, h4, h5, h6 {
+ color:#4D4197;
+}
+
+#contents h3{color:red;}
+
+#footer {
+ background: #4D4197;
+ clear:both;
+ color: white;
+ height: 40px;
+ text-align: right;
+ padding:3px 10px 3px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+           <img src="pena.jpg"/>
+           <h1>Clara Camarão</h1>
+     </div>
+
+    <div id="mainnav">
+     <ul>
+                <li><a href="#A1">Quem sou eu?</a></li>
+                <li><a href="#A2">Filiação</a></li>
+                <li><a href="#A3">Características Pessoais</a></li>
+                <li><a href="#A4">Preferências</a></li>
+                <li><a href="#A5">Frase</a></li>
+     </ul>
+     </div>
+
+    <div id="menu">
+     <ul>
+                <li><a href="#A1">Quem sou eu?</a></li>
+                <li><a href="#A2">Filiação</a></li>
+                <li><a href="#A3">Características Pessoais</a></li>
+                <li><a href="#A4">Preferências</a></li>
+                <li><a href="#A5">Frase</a></li>
+     </ul>
+     </div>
+
+     <div id="contents">
+     <h2><a name="A1">Quem sou eu?</a></h2>
+<p><i>Ando devagar porque já tive pressa<br/>
+E levo esse sorriso,<br/>
+porque já chorei demais<br/>
+Hoje me sinto mais forte,<br/>
+mais feliz quem sabe</i>
+</p><br/>
+<hrwidth="400" align="left"/>
+
+<h2><a name="A2">Filiação</a></h2>
+<p>Filha de Padeiro. Meu pai me ensinou a amar, a expressar o carinho,
+o amor por tudo que há vida. Quando era criança ele me levava para
+passear no parque e eu adorava correr. Meu pai é meu herói!</p>
+<p>Minha mãe de personalidade forte que adora cantar. Quando jovem cantou
+em rádio. Mas casou e deixou sua vocação de lado, o que lamenta até hoje.
+Mas nem por isso deixou de ser uma hiper mãe, como continua sendo até hoje!!!</p>
+<br/>
+<hrwidth="400" align="left"/>
+
+<h2><a name="A3">Características Pessoais</a></h2>
+
+<h3>Humor</h3>
+<p>Extrovertida, brincalhona, simpática e inteligente.</p>
+<br/>
+
+<h3>Paixões</h3>
+<p>Pela criançada, pelos meus pais, pelo meu esposo, pela arte, pelas cores, pelo teatro,
+por escutar música, dançar e caminhar ao ar livre, pela natureza, por animais e principalmente pela vida!Por ler livros:
+de psicologia, filosofia, relações interpessoais, dinâmica de Grupo, e artes em geral.</p>
+<br/>
+<hrwidth="400" align="left"/>
+
+<h2><a name="A4">Preferências</a></h2>
+
+<h3>Livros</h3>
+<ul>
+<li>O amor é a melhor estratégia - Tim Sanders.</li>
+<li>Não Leve a Vida tão a Sério – Hugh Prather.</li>
+<li>Quem Ama Educa - Içami Tiba.</li>
+<li>A Arte de Educar - Flávio Gikovate.</li>
+<li>Elaboração de Projetos Comunitários - Fernando Guilherme Tenório.</li>
+<li>Jogos Teatrais - Maria. C. Novelly.</li>
+</ul>
+
+<h3>Músicas</h3>
+<p>Mantras, cantigas,clássicas, românticas, pop star, tuwist, tangos e boleros,
+contemporânea, sou eclética quanto à música, depende do meu estado de espirito do dia.</p>
+
+<h3>Vídeos</h3>
+<ul>
+<li>O pequeno Príncipe e a Raposa - <a href="https://www.youtube.com/watch?v=GfOIj36_y2A" target="_blank">https://www.youtube.com/watch?v=GfOIj36_y2A</a></li>
+<li>Aquarela – Toquinho - <a href="https://hk.youtube.com/watch?v=2-V21HepcgY" target="_blank">https://hk.youtube.com/watch?v=2-V21HepcgY</a></li>
+</ul>
+
+<h3>Filmes</h3>
+<ul>
+<li>Poder Além da Vida.</li>
+<li>Uma Linda Mulher.</li>
+<li>O Homem da Máscara de Ferro.</li>
+</ul>
+
+<h3>Programas de TV</h3>
+<ul>
+<li>Estação Cultura TVE.</li>
+<li>Programa do Jô.</li>
+</ul>
+
+<hrwidth="400" align="left"/>
+
+<h2><a name="A5">Frase</a></h2>
+<p><b>"Tu te tornas eternamente responsável por aquilo que cativas."</b></p>
+
+<hrsize="5"/>
+
+<a href="#A1">Voltar ao topo da página.</a><br/>
+     </div>
+    <div id="footer"><p>Copyright © Daniel 2019</p></div>
+ </div>
+</body>
+</html>
+

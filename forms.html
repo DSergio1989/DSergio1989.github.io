@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	integrity="sha384- MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+    
+#container{
+	margin: 10px auto;
+	width: 500px;
+	background: #6E934A;
+ padding:10px;
+}
+    </style>
+  </head>
+
+
+<body>
+<div id="container" class="col-md-10">
+    <form id="login-form" role="form" class="col-11 margin-top-1rem" enctype="text/plain" action="mailto:daniel.vm26@yahoo.com" method="post">
+
+    
+    <label for="nome">Nome completo: </label>
+    <input type="text" id="nome" placeholder="Digite seu nome"/><br/><br/>
+      
+    <label for="senha">Senha: </label>
+    <input type="password" id="senha" placeholder="Digite sua senha"/><br/><br/>
+
+    <label for="file">Arquivo: </label>
+    <input type="file" id="file"/><br/><br/>
+
+    <textarea id="comentario" rows="3" cols="40" placeholder="Digite seu comentário aqui..."></textarea><br/><br/>
+
+    <label for="sexo">Sexo: </label>
+    <input type="radio" name="sex" id="Masculino"/>
+    <label for="Masculino">Masculino</label>
+    <input type="radio" name="sex" id="Feminino"/>
+    <label for="Feminino">Feminino</label><br/><br/>
+
+    <label for="estado_civil"> Estado Civil: </label>
+    <select name="estadocivil" id="estado_civil">
+    <option label="Selecione" value="-1" selected="selected">Selecione</option>
+    <option label="Solteiro" value="S">Solteiro</option>
+    <option label="União Estável" value="UE">União Estável</option>
+    <option label="Casado" value="C">Casado</option>
+    <option label="Viúvo" value="V">Viúvo</option>
+    <option label="Separado" value="E">Separado</option><br/>
+    <option label="Divorciado" value="D">Divorciado</option>
+    </select><br/><br/>
+
+    <input type="checkbox" name="areap" value="1" id="areap1"/>
+    <label for="areap1">Administração   </label>   
+    <input type="checkbox" name="areap" value="2" id="areap2"/>
+    <label for="areap2">Educação</label>
+    <input type="checkbox" name="areap" value="3" id="areap3"/>
+    <label for="areap3">Informática</label><br/><br/>
+
+    <br/>
+    Select your favorite color:
+      <input type="color" name="favcolor" value="#ff0000">
+    <br/>
+
+    <br/>
+
+      Birthday:
+      <input type="date" name="bday">
+
+    <br/>
+
+    <button name="submit" type="submit">Enviar</button>
+    <input type="reset">
+
+    </form>
+</div>
+<a href="index.html">Página inicial</a>
+</body>
+</html>

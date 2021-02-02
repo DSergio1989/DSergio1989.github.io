@@ -1,0 +1,12 @@
+p{color:red;}
+
+h1{color:blue;}
+
+
+#a{
+  background-color: lightgrey;
+  width: 300px;
+  border: 25px solid green;
+  padding: 50px;
+  margin: 10px;
+}
